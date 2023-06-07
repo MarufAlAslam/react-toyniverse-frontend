@@ -5,7 +5,8 @@ import avatar from "../../assets/images/avatar.png";
 
 const Header = () => {
   return (
-    <div className="px-6 py-2 header flex justify-between items-center bg-[#0f674d]">
+    <div className="header py-2 bg-[#0f674d]">
+        <div className="flex justify-between items-center custom-container">
       <NavLink className={"flex justify-start items-center"} to="/">
         <img src={logo} alt="logo" className="w-[60px] mr-1" />
         <span className="text-xl font-bold text-[#fff] uppercase">
@@ -36,6 +37,7 @@ const Header = () => {
           />
         </NavLink>
       </div>
+    </div>
     </div>
   );
 };
